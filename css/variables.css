@@ -1,0 +1,26 @@
+:root {
+  /* GAP */
+  --gapS: 5px;
+  --gapM: 10px;
+  --gapL: 15px;
+  --gapXL: 20px;
+  --gapXXL: 40px;
+
+  /* BORDER-RADIUS */
+  --borderRadius: 20px;
+
+  /* FONT-SIZES */
+  --fontsizeXS: 10px;
+  --fontsizeXS-small: calc(var(--fontsizeXS) / 2);
+  --fontsizeS: 20px;
+  --fontsizeS-small: calc(var(--fontsizeS) / 2);
+  --fontsizeM: 40px;
+  --fontsizeM-small: calc(var(--fontsizeM) / 2);
+  --fontsizeL: 60px;
+  --fontsizeL-small: calc(var(--fontsizeL) / 2);
+  --fontsizeXL: 80px;
+  --fontsizeXL-small: calc(var(--fontsizeXL) / 2);
+  --fontsizeXXL: 120px;
+  --fontsizeXXL-small: calc(var(--fontsizeXXL) / 2);
+  --fontsizeTitle: 11.9vw;
+}
