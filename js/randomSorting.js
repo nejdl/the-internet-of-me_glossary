@@ -1,4 +1,5 @@
-let termsInRandomOrder = [...terms];
+let originalTerms = document.getElementsByClassName('term');
+let termsInRandomOrder = [...originalTerms];
 shuffle(termsInRandomOrder);
 
 const recommendations1 = document.getElementById('recommendations-1');

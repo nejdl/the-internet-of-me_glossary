@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/toggleSwitch.css">
 </head>
 <body>
 
@@ -34,6 +35,16 @@
                 <p>
                     Filter bubbles, opaque feed algorithms and privacy concerns are one aspect of personalization on the Internet. Furthermore, what does personalization mean from a design and development point of view? What challenges does the responsive nature of the web pose for its design? How can the user’s influence on a website be made visible? Customization or personalization—what agency do we give the user?
                 </p>
+                <p>
+                    The course <i>The Internet of Me</i> [Burg Halle / WiSe 2022] aims to reflect on personalization on the web by creating a digital glossary. This consist of small web experiments exploring different terms, which are designed and coded by the students.
+                <p>
+                    Course Website:
+                    <br>
+                    <a href="https://the-internet-of-me.katharinanejdl.com" target="_blank">
+                        www.the-internet-of-me.katharinanejdl.com
+                    </a>
+                </p>
+
             </details>
             <details>
                 <summary>
@@ -41,22 +52,185 @@
                         Students
                     </h3>
                 </summary>
+                <p>
+                    Alexandra Vögtle
+                    <br>
+                    Daphne Croissier
+                    <br>
+                    Hyunhye Byun
+                    <br>
+                    Inseok Hwang
+                    <br>
+                    Johanna Wendel
+                    <br>
+                    Leonardo Alliata
+                    <br>
+                    Lisa Gawlick
+                    <br>
+                    Luka Vonderau
+                    <br>
+                    Marla Wolff
+                    <br>
+                    Moritz Geyer
+                    <br>
+                    Suhyun Kim
+                    <br>
+                    Žiga Anderlic
+                </p>
+                <p>
+                    <a href="https://the-internet-of-me.katharinanejdl.com" target="_blank">
+                        Digital Editorial Course
+                    </a>
+                    <br>
+                    <a href="https://www.burg-halle.de/" target="_blank">
+                        Burg Halle 2022
+                    </a>
+                    <br>
+                    Instructor: 
+                    <a href="https://katharinanejdl.com/" target="_blank">
+                        Katharina Nejdl
+                    </a>
+                </p>
             </details>
         </div>
     </header>
 
-    <div id="cookie-banner" class="columns columns-space-between info">
-        <h3>
-            Accept cookies?
-        </h3>
-        <div>
-            <button id="accept">
-                Accept
+    <div id="consent-popup" class="consent-ui info">
+        <div id="consent-popup__menu" class="fixed columns columns-2">
+            <button id="consent-popup__menu__personalization"class="active">
+                Personalization
             </button>
-            <button id="decline">
-                Decline
+            <button id="consent-popup__menu__settings">
+                Settings
             </button>
         </div>
+        <div id="consent-popup__personalization">
+            <p>
+                <b>We value your privacy</b>
+                When you browse the Internet, you may have noticed those pesky ads following you where you go based on your earlier web searches or visits to websites. Well, that’s because websites, advertisers, etc. track your movements.
+                Cookie profiling and other techniques are used to track your overall activities online and create a detailed profile of your browsing habits. Some people may not mind having relevant content or ads being served up to them, but this is a serious invasion of privacy for others.
+                
+                <a class="consent-popup__link" href="https://www.purevpn.com/blog/what-is-internet-privacy-scty" target="_blank">
+                    [https://www.purevpn.com/blog/what-is-internet-privacy-scty]
+                </a>
+            </p>
+
+            <p>
+                <b>How we track</b>
+                Based on all kinds of different personalization methods like cookies, user data or device fingerprinting, a website can personalise content and ads, provide social media features and analyse traffic to the website. A website can also share information about your use of our website with third parties such as social media, advertising and analytics partners. These partners may combine this information with other data that you have provided to them or that they have collected in the course of your use of the services to construct a user profile. 
+                
+                <a class="consent-popup__link" href="https://www.cookiebot.com" target="_blank">
+                    [https://www.cookiebot.com]
+                </a>
+            </p>
+            
+            <p>
+                <b>Why we use cookies</b>
+                The upside of personalization is an improved user experience that doesn’t require any extra effort from the users because the computer does all the work (convenience). The downside is that we’re at the mercy of the computer’s ability to guess what each user needs. Also, some users may feel that it’s unnerving if the computer is too good at guessing certain things about them. The “creepiness ditch” is the increasing discomfort people feel when a digital experience gets too personalized, but in a way that is disorienting or uncomfortable.
+                In addition, there are serious privacy-concerns with tracking. 
+
+                <a class="consent-popup__link" href="https://www.nngroup.com/articles/customization-personalization" target="_blank">
+                    [https://www.nngroup.com/articles/customization-personalization]
+                </a>
+                <a class="consent-popup__link" href="https://thedecisionlab.com" target="_blank">
+                    [https://thedecisionlab.com]
+                </a>
+            </p>
+            
+            <p>
+                <b>Data Privacy</b>
+                Data and privacy protectors criticise tracking methods for data collection. The “screening” of people is a sensitive issue in information processing and collection. Web browsing is linked to a user’s personal information. Location, interests, purchases, and more can be revealed just by what page a user visits. This allows them to draw conclusions about a user, and analyse patterns of activity. Use of web tracking can be controversial when applied in the context of a private individual; and to varying degrees is subject to legislation such as the EU’s eCommerce Directive and the UK’s Data Protection Act. When it is done without the knowledge of a user, it may be considered a breach of browser security.
+
+                <a class="consent-popup__link" href="https://de.wikipedia.org/wiki/Nutzerverfolgung" target="_blank">
+                    [https://de.wikipedia.org/wiki/Nutzerverfolgung]
+                </a>
+                <a class="consent-popup__link" href="https://en.wikipedia.org/wiki/Web_tracking#Controversy" target="_blank">
+                    [https://en.wikipedia.org/wiki/Web_tracking#Controversy]
+                </a>
+            </p>
+            
+            <p>
+                <b>History</b>
+                Online tracking began in the late 1990s but has expanded massively in the last decade. Advertising is the main business model financing media production on the open web, and the drive to increase revenue by targeting ads to selected users has led to the creation of a plethora of companies dedicated to monitoring our clicks, searches, and reading habits as we move around the Internet. While technologists have long worried about the privacy implications, it was the Wall Street Journal's What They Know series in 2010 that brought widespread public attention to the issue by showcasing how marketers gather data on online users.
+                
+                <a class="consent-popup__link" href="https://www.eff.org/de/issues/do-not-track" target="_blank">
+                    [https://www.eff.org/de/issues/do-not-track]
+                </a>
+            </p>
+            
+            <p>
+                <b>Recommendations & Filter Bubble</b>
+                Online services like Google and Facebook use computer programming algorithms to determine what information to deliver to you. Your “filter bubble” (a term coined by internet activist Eli Pariser) refers to the idea that this automated personalization, though helpful in some ways, can isolate you from other information. Sometimes referred to as an "echo chamber," the filter bubble created by your online activity can limit your exposure to different points of view and weaken your ability to avoid fake news and bias. 
+                In his TED Talk, Pariser discusses the effects of algorithms and warns us about the dangers of online filter bubbles.
+                
+                <a class="consent-popup__link" href="https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles" target="_blank">
+                    [https://www.ted.com/talks/eli_pariser_beware_online_filter_bubbles]
+                </a>
+                <a class="consent-popup__link" href="https://libraryguides.mdc.edu/FakeNews/FilterBubbles" target="_blank">
+                    [https://libraryguides.mdc.edu/FakeNews/FilterBubbles]
+                </a>
+            </p>
+        </div>
+
+        <div id="consent-popup__settings" class="hidden">
+            <p>
+                What are the conditions for a computer user to gain agency, defined here as the ability to evade automatisms? What is the user’s horizon of autonomy within a built world made of software programmed by somebody else, when its logic is made inaccessible in the name of convenience?
+                
+                <a class="consent-popup__link" href="https://theusercondition.computer" target="_blank">
+                    [https://theusercondition.computer]
+                </a>
+            </p>
+            <div id="toggle-switches">
+                <div class="toggle-switch">
+                    <div class="label">Necessary</div>
+                    <label class="switch" for="necessary" class="disabled">
+                        <input type="checkbox" id="necessary" checked disabled>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-switch">
+                    <div class="label">Preferences</div>
+                    <label class="switch" for="preferences">
+                        <input type="checkbox" id="preferences" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-switch">
+                    <div class="label">Recommendations</div>
+                    <label class="switch" for="recommendations">
+                        <input type="checkbox" id="recommendations" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="toggle-switch">
+                    <div class="label">Statistics</div>
+                    <label class="switch" for="statistics">
+                        <input type="checkbox" id="statistics" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>    
+        <div id="consent-popup__buttons" class="columns columns-space-between columns-3">
+            <button id="reject">
+                Reject All
+            </button>
+            <button id="settings">
+                Settings
+            </button>
+            <button id="accept">
+                Accept All
+            </button>
+        </div>
+    </div>
+    <div id="consent-icon" class="consent-ui info hidden">
+        <button>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g fill-rule="evenodd">
+                    <path d="M15.094 13.978c-1.146 0-1.946-.813-1.946-1.978s.8-1.978 1.946-1.978c1.145 0 1.945.813 1.945 1.978s-.8 1.978-1.945 1.978M9.07 10.022h3.883l-.094.09c-.537.515-.844 1.203-.844 1.888 0 1.738 1.294 3 3.079 3 1.786 0 3.082-1.262 3.082-3s-1.296-3-3.082-3H9.079C7.295 9 6 10.262 6 12s1.295 3 3.079 3h2.144v-1.022H9.07c-1.136 0-1.932-.813-1.937-1.978 0-1.146.815-1.978 1.937-1.978" fill="#000"></path>
+                </g>
+            </svg>
+        </button>
     </div>
     
     <main id="unpersonalized" class="hidden">
@@ -213,8 +387,17 @@
 
     </main>
 
-    <footer class="columns columns-space-between">
+
+    <footer>
+        <div id="surtitle" class="columns columns-4">
+            <div>Burg Halle</div>
+            <div>Digital Editorial Course WS 22/23</div>
+            <div></div>
+            <div class="right-align">Glossary of Web Personalization</div>
+        </div>
+    </footer>
     <!-- <footer class="columns columns-2"> -->
+    <!-- <footer class="columns columns-space-between">
         <details>
             <summary>
                 <h3>
@@ -229,21 +412,19 @@
                 </h3>
             </summary>
         </details>
-        <!-- <div></div>
+        <div></div>
         <details class="align-right">
             <summary>
                 <h3>
                     Personalize
                 </h3>
             </summary>
-        </details> -->
+        </details>
+    </footer> -->
 
-    </footer>
-
-    <script src="./js/lib/randomColor.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/randomColors.js"></script>
     <script src="./js/randomSorting.js"></script>
-    <script src="./js/cookieBanner.js"></script>
+    <script src="./js/lib/randomColor.js"></script>
+    <script src="./js/randomColors.js"></script>
+    <script src="./js/consentPopup.js"></script>
 </body>
 </html>

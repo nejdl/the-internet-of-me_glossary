@@ -6,14 +6,28 @@
   --gapXL: 20px;
   --gapXXL: 40px;
 
-  /* BORDER-RADIUS */
+  /* BORDER */
+  --borderRadiusS: 10px;
   --borderRadius: 20px;
+  --borderWidth: 2px;
+  --borderWidthActive: 5px;
+
+  /* BOX-SHADOW */
+  --boxShadow: 2px 5px 12px #00000029;
+
+  /* CONSENT-BUTTON */
+  --consentButtonHeight: 56px;
+
+  /* COLOR */
+  --lightGrey: #e2e2e2;
+  --grey: #707070;
 
   /* FONT-SIZES */
   --fontsizeXS: 10px;
   --fontsizeXS-small: calc(var(--fontsizeXS) / 2);
   --fontsizeS: 20px;
   --fontsizeS-small: calc(var(--fontsizeS) / 2);
+  --fontsizeSM: 30px;
   --fontsizeM: 40px;
   --fontsizeM-small: calc(var(--fontsizeM) / 2);
   --fontsizeL: 60px;
