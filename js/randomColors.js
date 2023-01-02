@@ -1,5 +1,5 @@
 let primaryColor = localStorage.getItem('primaryColor');
-let seedNumber = localStorage.getItem('seedNumber');
+let seedNumber = parseInt(localStorage.getItem('seedNumber'));
 if (!primaryColor || !seedNumber) {
   primaryColor = randomColor();
   seedNumber = Math.floor(Math.random() * 50);
@@ -39,8 +39,8 @@ const pickTextColorBasedOnBgColor = (bgColor) => {
 const changeTermColors = (color) => {
   for (let i = 0; i < terms.length; i++) {
     const term = terms[i];
-    const randomColorValue = randomColorArray[i];
-    const greyColorValue = greyColorArray[i];
+    let randomColorValue = randomColorArray[i];
+    let greyColorValue = greyColorArray[i];
     term.style.backgroundColor = color ? greyColorValue : randomColorValue;
     term.style.color = pickTextColorBasedOnBgColor(
       color ? greyColorValue : randomColorValue
