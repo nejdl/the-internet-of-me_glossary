@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Customization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>  
+  <body id="body" class="dark-theme || light-theme">
+
+<div class="wrap-all">
+    <div class="soundWrapper column">
+      <button id="osc-button">
+        OSC 1
+      </button>
+      <button id="frequency-button">CHANGE FREQUENCY</button>
+      <button id="osc-button2">
+        OSC 2
+      </link>
+      </button>
+      <button onclick="muteButton()">MUTE</button>
+    
+    <div class="soundSliders column">
+      <h1>Change some parameters of the click sound</h1>
+      <div class="slidecontainer">
+        <input type="range" min="-60" max="60" value="0" class="slider" step="1" id="myVol">
+        <p>VOLUME</p>
+      </div>
+
+      <div class="slidecontainer">
+        <input type="range" min="0" max="20" value="0" class="slider" step="1" id="itFuzzy">
+        <p>DISTORTION</p>
+      </div>
+
+      <div class="slidecontainer">
+        <input type="range" min="0" max="1" value="0" class="slider" step="0.01" id="slapBack">
+        <p>DELAY LENGTH</p>
+      </div>
+
+    </div>
+   
+</div> 
+<div class="description column">
+  <div class="desWrap">
+  
+      <h1 contenteditable="true">Customization</h1>
+      <p contenteditable="true" class="editableText">Customization includes a larger set of activities than personalization. The goal of both is better relevance and being able to meet your customers’ expectations, but customization also addresses how well the customer can participate in that experience. For example, the user experience (UX) design may be customized to a specific type of experience without being personalized.<br>This text is editable! Don't write mean things :(
+      </p>
+  </div>
+</div>
+  <div class="extraImageSkills">
+    <button id="pink-noise">PINK NOISE</button>
+    <button class="btn-toggle">Dark / Light</button>
+    <div style="width: 300px;"></div>
+    <input type="range" min="12" max="36" value="12" id="fontsizeee" step="1">
+      <form>
+      <select name="bg" id="bg" onchange="changeTheme()">
+      <option value="default">Default</option>
+      <option value="jungle">Jungle</option>
+      <option value="maritime">Maritime</option>
+      <option value="custom">Custom</option>
+      </select>
+      </form>
+
+    </div>
+  </div>
+  
+
+
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script> -->
+
+
+    <!-- sound libraries --> 
+    <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal/browser/tonal.min.js"></script>
+    <script src="https://unpkg.com/tone@14.7.58/build/Tone.js"></script>
+    
+    <script src="./js/main.js"></script>
+    <!-- <script src="/js/example.js"></script> -->
+
+  </body>
+</html>
+
+

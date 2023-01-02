@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sonne.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="brightness-box">
+        <main class="center">
+          <div class="sprite"></div>
+
+      </main>
+      <input type="range" id="range" min="0" max="100" value="100">
+    </div>
+    </div>
+
+    <script type="text/javascript" SRC="himagefall/picture-fall.js"></script>
+    <script type="text/javascript" SRC="main.js"></script>
+
+    <script>
+      rangeInput = document.getElementById('range');
+      container = document.getElementsByClassName('container')[0];
+
+      var dots = document.getElementsByClassName('dot')
+      // console.log(dots)
+      
+      rangeInput.addEventListener("input",function(){
+        // animate sun
+        frame = rangeInput.value;
+        mappedRangeInput = Math.round(map(frame, 100, 0, 0, 18))
+
+        spriteEl.style.backgroundPositionY = `-${height*mappedRangeInput}px`;
+
+        //rain animation//
+        if(rangeInput.value < 50){
+          // console.log("true")
+          // show dots
+          for (var dot of dots){
+            // console.log(dot)
+            dot.style.display = 'block';
+          }
+
+        } else {
+          // console.log("false")
+
+          for (var dot of dots){
+            // console.log(dot)
+            dot.style.display = 'none';
+          }
+          // hide dots
+        }
+
+        rangeInput.style.backgroundImage = `linear-gradient(90deg, var(--bg-value-color) 0%, var(--bg-value-color) ${rangeInput.value}%, var(--bg-range-color) ${rangeInput.value}%, var(--bg-range-color) 100%)`;
+        container.style.filter = "brightness(" + rangeInput.value + "%)";
+      });
+
+
+
+
+    </script>
+  </body>
+</html>

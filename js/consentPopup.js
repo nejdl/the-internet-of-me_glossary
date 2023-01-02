@@ -1,3 +1,36 @@
+// save settings on local storage
+let personalizationSettings = localStorage.getItem('personalizationSettings');
+let recommendationSettings = localStorage.getItem('recommendationSettings');
+let statisticSettings = localStorage.getItem('statisticSettings');
+
+console.log(personalizationSettings);
+console.log(recommendationSettings);
+console.log(statisticSettings);
+
+const getSettingsFromLocalStorage = () => {
+  if (personalizationSettings && recommendationSettings && statisticSettings) {
+    closePopup();
+
+    if (personalizationSettings == 'true') {
+      addColor();
+    } else {
+      removeColor();
+    }
+
+    if (recommendationSettings == 'true') {
+      addRecommendations();
+    } else {
+      removeRecommendations();
+    }
+
+    if (statisticSettings == 'true') {
+      statisticsToggle.checked = true;
+    } else {
+      statisticsToggle.checked = false;
+    }
+  }
+};
+
 const consentPopup = document.getElementById('consent-popup');
 const consentIcon = document.getElementById('consent-icon');
 const menuButton_personalization = document.getElementById(
@@ -33,13 +66,25 @@ acceptButton.addEventListener('click', () => {
     addColor();
     addRecommendations();
     statisticsToggle.checked = true;
+    localStorage.setItem('statisticSettings', 'true');
+  }
+
+  if (preferencesToggle.checked) {
+    localStorage.setItem('personalizationSettings', 'true');
+  }
+
+  if (recommendationsToggle.checked) {
+    localStorage.setItem('recommendationSettings', 'true');
   }
 
   if (statisticsToggle.checked) {
     const settingsOn = statisticsToggle.checked;
     if (settingsOn) {
       console.log(' ͡° ͜ʖ ͡°');
+      localStorage.setItem('statisticSettings', 'true');
     }
+  } else {
+    localStorage.setItem('statisticSettings', 'false');
   }
 });
 
@@ -48,6 +93,7 @@ rejectButton.addEventListener('click', () => {
   removeColor();
   removeRecommendations();
   statisticsToggle.checked = false;
+  localStorage.setItem('statisticSettings', 'false');
 });
 
 consentIcon.addEventListener('click', () => {
@@ -136,6 +182,8 @@ const addColor = () => {
 
   setColorVariables();
   changeTermColors();
+
+  localStorage.setItem('personalizationSettings', 'true');
 };
 
 const removeColor = () => {
@@ -145,6 +193,8 @@ const removeColor = () => {
   // const greyValue = '#707070';
   setColorVariables(greyValue);
   changeTermColors(greyValue);
+
+  localStorage.setItem('personalizationSettings', 'false');
 };
 
 const addRecommendations = () => {
@@ -152,6 +202,8 @@ const addRecommendations = () => {
 
   unpersonalizedLayout.classList.add('hidden');
   personalizedLayout.classList.remove('hidden');
+
+  localStorage.setItem('recommendationSettings', 'true');
 };
 
 const removeRecommendations = () => {
@@ -159,6 +211,8 @@ const removeRecommendations = () => {
 
   unpersonalizedLayout.classList.remove('hidden');
   personalizedLayout.classList.add('hidden');
+
+  localStorage.setItem('recommendationSettings', 'false');
 };
 
 const setColorVariables = (color) => {
@@ -182,3 +236,5 @@ const setColorVariables = (color) => {
 };
 
 setColorVariables();
+
+getSettingsFromLocalStorage();

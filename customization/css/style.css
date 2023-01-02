@@ -1,0 +1,80 @@
+body {
+    background-color:rgb(255, 210, 255);
+    background-size: 100%;
+    color: brown;
+    
+}
+
+body.dark-theme {
+  color: #eee;
+  background-color: #650058;
+}
+
+.wrap-all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+button {
+    background-color: whitesmoke;
+    width: 200px;
+    height: 120px;
+    border-radius: 150px;
+    color: blue;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow:  -2px 2px 9px #5a0057,
+                 2px -2px 9px #bba4ff;
+}
+
+.column {
+ width: 33,3%;
+ float: left;
+}
+
+.soundWrapper {
+ margin: 10px;
+ display: flex;
+ mix-blend-mode:luminosity;
+ flex-direction: column;
+}
+
+.soundSliders {
+display: flex;
+flex-direction: column;
+}
+
+.description {
+ padding: 10px;
+ mix-blend-mode:luminosity;
+ overflow:visible;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 7px purple;
+    background: whitesmoke; 
+    border-radius: 10px;
+    
+  }
+
+  .extraImageSkills {
+    mix-blend-mode:luminosity;
+  }
+
+  #bg {
+   background-color: bisque;
+   font-size: large;
+  }

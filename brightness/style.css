@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: white;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brightness-box{
+  width: 200px;
+  height: 80px;
+  border-radius: 18px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: rotateZ(270deg) translateX(-30px);
+  display: inline-block;
+}
+
+.brightness-box i{
+  margin: 0 10px;
+}
+
+#range{
+  width: 100%;
+  -webkit-appearance: none;
+  height: 60px;
+  outline: none;
+  border-radius: 18px;
+}
+
+#range::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 22px;
+  height: 60px;
+  background:transparent;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+:root {
+  --bg-value-color: #ededed;
+  --bg-range-color: #2e2e2e;
+}
+
+input {
+  background-image: linear-gradient(
+    90deg,
+    var(--bg-value-color) 0%,
+    var(--bg-value-color) 100%,
+    var(--bg-range-color) 100%,
+    var(--bg-range-color) 100%
+  );
+}
+
+.dot{
+  display: none;
+  pointer-events: none;
+
+}
+
+img{
+  width: 20px;
+  object-fit:cover
+}
+
+.sprite{
+  background-image: url(sonne.png);
+  background-size: cover;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+
+ }

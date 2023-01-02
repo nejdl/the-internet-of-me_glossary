@@ -1,0 +1,48 @@
+html, body {
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+.center {
+    width: 30%;
+    max-width: 1000px;
+    margin: 0 auto;
+         position: absolute;
+     left: 30%;
+     transform: translate(-50%, 0%);
+     top: 17%;
+    
+  }
+
+.sprite {
+    background-image: url('rereresonne.png');
+    width: 100%;
+    background-size: cover;
+  }
+
+  .value {
+    font-weight: bold;
+  }
+  
+  .controller {
+    margin: 0 auto;
+    bottom: 100px;
+    text-align: center;
+  }
+  
+  .mood {
+    font-size: 16px;
+    display: inline-block;
+  }
+  
+  .mood__number {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .mood__slider {
+    display: inline-block;
+    width: 240px;
+    margin-top: 20px;
+  }

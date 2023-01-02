@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(226, 226, 226);
+    height: 1200px;
+    transition: all 0.5s ease;
+}
+
+@font-face {
+    font-family: Proxima Nova Bold;
+    src: url(ProximaNova-Bold.otf);
+}
+
+@font-face {
+    font-family: Proforma Light;
+    src: url(Proforma-Light.otf);
+}
+
+@font-face {
+    font-family: Pilowlava;
+    src: url(Pilowlava-Regular.otf);
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        background-color: black;
+    }
+    h1 {
+        display: none;
+    }
+    h2 {
+        color:rgb(225, 255, 0);
+    }
+    #eins {
+        display: none;
+    }
+    #zwei {
+        display: none;
+    }
+    #drei {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    h2 {
+        color:rgba(225, 255, 0, 0)
+    }
+}
+
+h1 {
+    font-family: Pilowlava;
+    font-size: 4vw;
+    text-align: justify;
+    color: rgb(78, 108, 255);
+    position: fixed;
+    margin-top: 100px;
+    width: 60%;
+    margin-left: 35%;
+    margin-right: 20%;
+    transition-duration: 3s;
+    transition-property: transform filter;
+    transform-property: blur;
+}
+
+h1:hover {
+    filter: blur(20px);
+    font-style: italic;
+    transform: skewX(20deg);
+}
+
+h2 {
+    font-family: Proxima Nova Bold;
+    font-style: oblique;
+    font-size: 50px;
+    position: fixed;
+    margin-top: 200px;
+    width: 60%;
+    margin-left: 30px;
+    color: invisible;
+}
+
+#eins {
+    width: 800px;
+    height: 230px;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 305px;
+    font-size: 27pt;
+    font-family: Proforma Light;
+    text-align: justify;
+    position: absolute;
+    overflow: scroll;
+}
+
+#zwei {
+    width: 800px;
+    height: 520px;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 8.5px;
+    font-size: 27pt;
+    font-family: Proforma Light;
+    text-align: justify;
+    position: absolute;
+    overflow: scroll;
+}
+
+#drei {
+    width: 52%;
+    height: 200px;
+    border: 3px solid rgb(225, 255, 0);
+    border-radius: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 620px;
+    font-size: 15pt;
+    font-family: Proforma Light;
+    position: absolute;
+    overflow: scroll;
+    animation: rotate 2s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.link1 {
+    position: fixed;
+    font-size: 9pt;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-right: 25%;
+    margin-top: 85vh;
+    color: rgb(225, 255, 0);
+    overflow-x: scroll;
+    padding: 5px;
+    background-color: rgb(78, 108, 255);
+    border-radius: 30px;
+}
+
+.linkchange {
+    font-size: 24pt;
+}
+
+.link2 {
+    position: fixed;
+    font-size: 9pt;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-right: 25%;
+    margin-top: 90vh;
+    color: rgb(225, 255, 0);
+    overflow-x: scroll;
+    padding: 5px;
+    background-color: rgb(78, 108, 255);
+    border-radius: 30px;
+}
+
+#night {
+    position: fixed;
+    font-size: 9pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+    color: rgb(78, 108, 255);
+    overflow-x: scroll;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#day {
+    position: fixed;
+    font-size: 9pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    margin-top: 40px;
+    color: rgb(78, 108, 255);
+    overflow-x: scroll;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.mode-one {
+    background-color: black;
+}
+
+.mode-two {
+    color: rgb(226, 226, 226);
+}
+
+.invisible {
+    color: transparent;
+}
+
+#cat {
+    display: none;
+    position: absolute;
+    width: 300px;
+    margin-top: 515px;
+    margin-left: 10%;
+}
+
+.link2:hover + #cat {
+    display: block;
+}
+
+#source1 {
+    position: absolute;
+    font-size: 7pt;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 90%;
+    margin-top: 1100px;
+    color: rgb(225, 255, 0);
+}
+
+#source2 {
+    position: absolute;
+    font-size: 7pt;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 90%;
+    margin-top: 1120px;
+    color: rgb(225, 255, 0);
+}
+
+#source3 {
+    position: absolute;
+    font-size: 7pt;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 90%;
+    margin-top: 1140px;
+    color: rgb(225, 255, 0);
+}
