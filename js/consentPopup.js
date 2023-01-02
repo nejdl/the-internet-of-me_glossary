@@ -3,10 +3,6 @@ let personalizationSettings = localStorage.getItem('personalizationSettings');
 let recommendationSettings = localStorage.getItem('recommendationSettings');
 let statisticSettings = localStorage.getItem('statisticSettings');
 
-console.log(personalizationSettings);
-console.log(recommendationSettings);
-console.log(statisticSettings);
-
 const getSettingsFromLocalStorage = () => {
   if (personalizationSettings && recommendationSettings && statisticSettings) {
     closePopup();

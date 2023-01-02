@@ -1,0 +1,93 @@
+p {
+    font-family: "Anton";
+    font-size: 200;
+  }
+  p::first-line {
+    color: #ff00a2;
+    font-variant: none;
+  }
+
+  p1 {
+    font-family: "Anton";
+    font-size: 50;
+    color:hsl(74, 100%, 50%);
+
+  }
+  
+
+  p2 {
+    font-family: "Anton";
+    font-size: 20;
+    color: hsl(74, 100%, 50%);
+  }
+ 
+
+ 
+
+  h1{
+    font-family: Anton;}
+
+
+  .text {
+    color: blue;
+  }
+
+  #one {
+    background-color: #010000;
+  }
+
+  a:link {
+    text-decoration: none;
+    font-family: Anton;
+    font-size: 100px;
+    color: aqua;
+    position: -300px;
+
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: vertical;
+    overflow: auto;
+
+  }
+
+
+   
+  #nameform {
+
+  
+  
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Anton;
+    font-size: 50px;
+    color: aqua;
+
+  }
+
+
+
+  #fname {
+
+    font-family: "Anton";
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Anton;
+    color: red;
+
+  }
+
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-color: blue
+    
+
+    
+  
+  }
+
+

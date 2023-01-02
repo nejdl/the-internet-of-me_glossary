@@ -24,29 +24,28 @@ const termSection3 = [
   termsInRandomOrder[5].cloneNode(true),
   termsInRandomOrder[6].cloneNode(true),
   termsInRandomOrder[7].cloneNode(true),
-  termsInRandomOrder[8].cloneNode(true),
 ];
 const termSection4 = [
+  termsInRandomOrder[8].cloneNode(true),
   termsInRandomOrder[9].cloneNode(true),
-  termsInRandomOrder[10].cloneNode(true),
-  termsInRandomOrder[11].cloneNode(true),
+  // termsInRandomOrder[10].cloneNode(true),
 ];
 // 5 terms +
 const termSection5 = [
-  termsInRandomOrder[12].cloneNode(true),
-  termsInRandomOrder[13].cloneNode(true),
-  termsInRandomOrder[14].cloneNode(true),
-  termsInRandomOrder[15].cloneNode(true),
+  // termsInRandomOrder[12].cloneNode(true),
+  // termsInRandomOrder[13].cloneNode(true),
+  // termsInRandomOrder[14].cloneNode(true),
+  // termsInRandomOrder[15].cloneNode(true),
 ];
 
 recommendations1.append(...termSection1);
 recommendations2.append(...termSection2);
 recommendations3.append(...termSection3);
 recommendations4.append(...termSection4);
-recommendations5.append(...termSection5);
+// recommendations5.append(...termSection5);
 
 // https://stackoverflow.com/questions/16801687/javascript-random-ordering-with-seed
-function shuffle(array, seed) {
+function shuffle(array) {
   var m = array.length,
     t,
     i;
@@ -54,19 +53,19 @@ function shuffle(array, seed) {
   // While there remain elements to shuffle…
   while (m) {
     // Pick a remaining element…
-    i = Math.floor(random(seed) * m--);
+    i = Math.floor(random(seedNumber) * m--);
 
     // And swap it with the current element.
     t = array[m];
     array[m] = array[i];
     array[i] = t;
-    ++seed;
+    ++seedNumber;
   }
 
   return array;
 }
 
-function random(seed) {
-  var x = Math.sin(seed++) * 10000;
+function random(seedNumber) {
+  var x = Math.sin(seedNumber++) * 10000;
   return x - Math.floor(x);
 }

@@ -1,0 +1,25 @@
+img{
+   
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  
+
+}
+ 
+
+ 
+ a {
+    text-decoration: none;
+    font-family: Anton;
+    font-size: 100px;
+    color: black;
+    position: fixed;
+    top: 8px;
+    left: 16px;
+
+
+
+   
+
+  }

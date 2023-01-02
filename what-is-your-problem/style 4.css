@@ -1,0 +1,31 @@
+
+
+
+
+
+
+  .a1 {
+    
+    text-decoration: none;
+    font-family: Anton;
+    font-size: 50px;
+    color: black;
+    top:100px;
+    position:absolute;
+    left: 16px;
+
+   
+    }
+
+    .a2 {
+    
+      text-decoration: none;
+      font-family: Anton;
+      font-size: 50px;
+      color: black;
+      top:100px;
+      position:absolute;
+      right: 20px;
+
+     
+      }

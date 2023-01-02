@@ -1,0 +1,39 @@
+*{margin:0;padding:0;position:relative;list-style:none;text-decoration:none;box-sizing:border-box;word-break:keep-all;
+font-family:neue-haas-grotesk-display, sans-serif;}
+
+html{font-size:16px;font-family:neue-haas-grotesk-display, 
+  sans-serif;scroll-behavior:smooth}
+body{line-height:1.55em;background:#646467}
+body,input,textarea,button,select,option{font-size:1rem}
+a {
+  color:inherit;
+}
+h3{font-size:2rem}
+h4{font-size:1.41rem}
+img{
+  display:block
+}
+.name-holder img {
+  width: 100px
+}
+.background{display:flex;justify-content:space-between;position:absolute;top:0;left:0;width:100%;height:100vh;padding:0 1rem}
+.background span{display:block;height:100%;width:calc(11.1111111111% - 2.7vw);
+  margin-right:2.7vw;background:linear-gradient(180deg, #BDBDBD 0%, rgba(217, 217, 217, 0) 100%, rgba(217, 217, 217, 0) 100%)}
+  .background span:last-child{margin-right:0}
+  .main{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}
+  .logo-holder{display:flex;justify-content:center}
+  .logo-holder img{width:calc((100vw - 2rem)/12*7)}
+  .name-holder{margin:40px 0}
+  .door-line{height:100vw;position:fixed;z-index:100;width:20px;margin-left:auto;margin-right:auto;background:#ffffff;mix-blend-mode:difference;animation-name:rotate;animation-duration:60s;animation-iteration-count:infinite;animation-timing-function:linear;animation-fill-mode:forwards}
+  .static-door-line{width:100vw;margin-left:auto;margin-right:auto;margin:30vh auto;background-color:#000;height:10px;transform:rotate(25deg)}
+  .organizer{position:absolute;bottom:1.5rem;padding-bottom:0}
+  .contents{max-width:980px;margin:10vh auto;padding:0 1rem}
+  .contents p{font-size:1.7rem;line-height:1.7em;padding-bottom:0}
+  .contents p:not(:last-child){padding-bottom:1.7em}
+  .contents *.center{text-align:center}table{border-top:2px solid #000000;border-bottom:2px solid #000000;border-collapse:collapse;background:#fff;width:100%}
+  table,table *{font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+
+@keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}@media screen and (max-width: 1024px){.contents p{font-size:1.4rem}}@media screen and (max-width: 768px){.logo-holder{width:100%;padding:1rem}.logo-holder img{width:100%}.background{padding:0}.background span{width:25%;margin-right:0}.background span:nth-child(n+4){display:none}.door-line{display:none}}@media screen and (max-width: 450px){.contents p{font-size:1.2rem}}@media screen and (max-width: 350px){.contents p{font-size:1.1rem}}@media screen and (max-device-aspect-ratio: 1/1){.door-line{height:100vh}}
+@media screen and (min-width: 769px){.static-door-line{display:none}} 
