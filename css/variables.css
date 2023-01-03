@@ -25,16 +25,34 @@
   /* FONT-SIZES */
   --fontsizeXS: 10px;
   --fontsizeXS-small: calc(var(--fontsizeXS) / 2);
+  --fontsizeS-XS: 15px;
   --fontsizeS: 20px;
   --fontsizeS-small: calc(var(--fontsizeS) / 2);
-  --fontsizeSM: 30px;
-  --fontsizeM: 40px;
+  --fontsizeM: calc(var(--fontsizeS) * 2);
   --fontsizeM-small: calc(var(--fontsizeM) / 2);
-  --fontsizeL: 60px;
+  --fontsizeL: calc(var(--fontsizeS) * 3);
   --fontsizeL-small: calc(var(--fontsizeL) / 2);
-  --fontsizeXL: 80px;
+  --fontsizeXL: calc(var(--fontsizeM) * 2);
   --fontsizeXL-small: calc(var(--fontsizeXL) / 2);
-  --fontsizeXXL: 120px;
+  --fontsizeXXL: calc(var(--fontsizeL) * 2);
   --fontsizeXXL-small: calc(var(--fontsizeXXL) / 2);
   --fontsizeTitle: 11.9vw;
+
+  /* WIDTH */
+  --detailsWidth: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --fontsizeS: 15px;
+    --detailsWidth: 66%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    --fontsizeS: 10px;
+    --detailsWidth: 100%;
+    --fontsizeTitle: 11.7vw;
+  }
 }
