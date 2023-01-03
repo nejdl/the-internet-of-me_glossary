@@ -28,7 +28,8 @@ const termSection3 = [
 const termSection4 = [
   termsInRandomOrder[8].cloneNode(true),
   termsInRandomOrder[9].cloneNode(true),
-  // termsInRandomOrder[10].cloneNode(true),
+  termsInRandomOrder[10].cloneNode(true),
+  termsInRandomOrder[11].cloneNode(true),
 ];
 // 5 terms +
 const termSection5 = [
