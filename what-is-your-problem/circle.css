@@ -1,13 +1,17 @@
 /* CIRCLE */
+body {
+  min-height: 100vh;
+}
+
 #circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    background-color: white;
-    mix-blend-mode: difference;
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: white;
+  mix-blend-mode: difference;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
