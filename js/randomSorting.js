@@ -24,12 +24,13 @@ const termSection3 = [
   termsInRandomOrder[5].cloneNode(true),
   termsInRandomOrder[6].cloneNode(true),
   termsInRandomOrder[7].cloneNode(true),
+  termsInRandomOrder[8].cloneNode(true),
 ];
 const termSection4 = [
-  termsInRandomOrder[8].cloneNode(true),
   termsInRandomOrder[9].cloneNode(true),
   termsInRandomOrder[10].cloneNode(true),
   termsInRandomOrder[11].cloneNode(true),
+  termsInRandomOrder[12].cloneNode(true),
 ];
 // 5 terms +
 const termSection5 = [
